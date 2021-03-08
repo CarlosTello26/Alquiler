@@ -7,14 +7,14 @@ using System.IO;
 
 namespace Alquiler
 {
-    class Alquleres
+    class Rentas
     {
-        String nit;
-        string Nombre;
+        string nit;
+        String nombre;
         String Direccion;
 
         public string Nit { get => nit; set => nit = value; }
-        public string Nombre1 { get => Nombre; set => Nombre = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
         public string Direccion1 { get => Direccion; set => Direccion = value; }
     }
 }

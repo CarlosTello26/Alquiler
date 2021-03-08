@@ -13,6 +13,8 @@ namespace Alquiler
 {
     public partial class Alquileres : Form
     {
+        List<Rentas> renta = new List<Rentas>();
+        
         public Alquileres()
         {
             InitializeComponent();
@@ -21,6 +23,15 @@ namespace Alquiler
         private void Alquileres_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BTingresaralquiler_Click(object sender, EventArgs e)
+        {
+            Rentas rentaTemp = new Rentas();
+
+            rentaTemp.Nit = TXTnit.Text;
+            rentaTemp.Nombre = TXTnombre.Text;
+            rentaTemp.Direccion1 = TXTdireccion.Text;         
         }
     }
 }

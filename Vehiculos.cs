@@ -13,6 +13,8 @@ namespace Alquiler
 {
     public partial class Vehiculos : Form
     {
+        List<Carros> carros = new List<Carros>();
+
         public Vehiculos()
         {
             InitializeComponent();
@@ -20,6 +22,22 @@ namespace Alquiler
 
         private void Vehiculos_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void BTingresarvehiculo_Click(object sender, EventArgs e)
+        {
+            Carros carroTemp = new Carros();
+
+            carroTemp.Placa = TXTplaca.Text;
+            carroTemp.Marca = TXTmarca.Text;
+            carroTemp.Color = TXTcolor.Text;
+            carroTemp.Precioporkilometros = TXTprecio.Text;
+            carroTemp.Fechadealquiler = FECHAalquiler.SelectionStart;
+            carroTemp.Fechadedevolucion = FECHAdevolucion.SelectionStart;
+
+            carros.Add(carroTemp);
+
 
         }
     }

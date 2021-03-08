@@ -139,6 +139,7 @@ namespace Alquiler
             this.BTingresarvehiculo.TabIndex = 11;
             this.BTingresarvehiculo.Text = "Ingresar";
             this.BTingresarvehiculo.UseVisualStyleBackColor = true;
+            this.BTingresarvehiculo.Click += new System.EventHandler(this.BTingresarvehiculo_Click);
             // 
             // Vehiculos
             // 

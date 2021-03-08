@@ -94,12 +94,13 @@ namespace Alquiler
             this.BTingresaralquiler.TabIndex = 14;
             this.BTingresaralquiler.Text = "Ingresar";
             this.BTingresaralquiler.UseVisualStyleBackColor = true;
+            this.BTingresaralquiler.Click += new System.EventHandler(this.BTingresaralquiler_Click);
             // 
             // Alquileres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 147);
+            this.ClientSize = new System.Drawing.Size(366, 152);
             this.Controls.Add(this.BTingresaralquiler);
             this.Controls.Add(this.TXTdireccion);
             this.Controls.Add(this.TXTnombre);
