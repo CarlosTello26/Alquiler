@@ -22,7 +22,7 @@ namespace Alquiler
 
         private void Alquileres_Load(object sender, EventArgs e)
         {
-
+            Leer1();
         }
 
         private void BTingresaralquiler_Click(object sender, EventArgs e)
@@ -32,6 +32,8 @@ namespace Alquiler
             rentaTemp.Nit = TXTnit.Text;
             rentaTemp.Nombre = TXTnombre.Text;
             rentaTemp.Direccion1 = TXTdireccion.Text;
+
+            renta.Add(rentaTemp);
 
             Guardar1();
 
@@ -56,7 +58,7 @@ namespace Alquiler
         }
         private void Leer1()
         {
-            FileStream stream = new FileStream("Alquileres.txt", FileMode.Open, FileAccess.Read);
+            FileStream stream = new FileStream("ALquileres.txt", FileMode.Open, FileAccess.Read);
             StreamReader reader = new StreamReader(stream);
 
             while (reader.Peek() > -1)
@@ -74,9 +76,11 @@ namespace Alquiler
 
         private void BTmostrar_Click(object sender, EventArgs e)
         {
+           
             DATOSalquileres.DataSource = null;
             DATOSalquileres.DataSource = renta;
-            DATOSalquileres.Refresh(); 
+            DATOSalquileres.Refresh();
+           
         }
     }
 }

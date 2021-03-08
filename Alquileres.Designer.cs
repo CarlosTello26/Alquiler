@@ -91,9 +91,9 @@ namespace Alquiler
             // 
             // BTingresaralquiler
             // 
-            this.BTingresaralquiler.Location = new System.Drawing.Point(269, 37);
+            this.BTingresaralquiler.Location = new System.Drawing.Point(240, 10);
             this.BTingresaralquiler.Name = "BTingresaralquiler";
-            this.BTingresaralquiler.Size = new System.Drawing.Size(122, 61);
+            this.BTingresaralquiler.Size = new System.Drawing.Size(102, 61);
             this.BTingresaralquiler.TabIndex = 14;
             this.BTingresaralquiler.Text = "Ingresar";
             this.BTingresaralquiler.UseVisualStyleBackColor = true;
@@ -104,14 +104,14 @@ namespace Alquiler
             this.DATOSalquileres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DATOSalquileres.Location = new System.Drawing.Point(13, 151);
             this.DATOSalquileres.Name = "DATOSalquileres";
-            this.DATOSalquileres.Size = new System.Drawing.Size(585, 282);
+            this.DATOSalquileres.Size = new System.Drawing.Size(329, 282);
             this.DATOSalquileres.TabIndex = 15;
             // 
             // BTmostrar
             // 
-            this.BTmostrar.Location = new System.Drawing.Point(425, 34);
+            this.BTmostrar.Location = new System.Drawing.Point(240, 82);
             this.BTmostrar.Name = "BTmostrar";
-            this.BTmostrar.Size = new System.Drawing.Size(122, 61);
+            this.BTmostrar.Size = new System.Drawing.Size(102, 61);
             this.BTmostrar.TabIndex = 16;
             this.BTmostrar.Text = "Mostrar";
             this.BTmostrar.UseVisualStyleBackColor = true;
@@ -121,7 +121,7 @@ namespace Alquiler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 464);
+            this.ClientSize = new System.Drawing.Size(364, 449);
             this.Controls.Add(this.BTmostrar);
             this.Controls.Add(this.DATOSalquileres);
             this.Controls.Add(this.BTingresaralquiler);

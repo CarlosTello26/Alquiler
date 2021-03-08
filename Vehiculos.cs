@@ -22,7 +22,7 @@ namespace Alquiler
 
         private void Vehiculos_Load(object sender, EventArgs e)
         {
-
+            Leer2();
         }
 
         private void BTingresarvehiculo_Click(object sender, EventArgs e)
