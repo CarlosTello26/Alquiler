@@ -29,34 +29,45 @@ namespace Alquiler
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.BTalquileres = new System.Windows.Forms.Button();
+            this.BTvehiculos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // BTalquileres
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(172, 151);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.BTalquileres.Location = new System.Drawing.Point(12, 32);
+            this.BTalquileres.Name = "BTalquileres";
+            this.BTalquileres.Size = new System.Drawing.Size(89, 43);
+            this.BTalquileres.TabIndex = 0;
+            this.BTalquileres.Text = "Alquileres";
+            this.BTalquileres.UseVisualStyleBackColor = true;
+            // 
+            // BTvehiculos
+            // 
+            this.BTvehiculos.Location = new System.Drawing.Point(134, 32);
+            this.BTvehiculos.Name = "BTvehiculos";
+            this.BTvehiculos.Size = new System.Drawing.Size(89, 43);
+            this.BTvehiculos.TabIndex = 1;
+            this.BTvehiculos.Text = "Vehiculos";
+            this.BTvehiculos.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(239, 117);
+            this.Controls.Add(this.BTvehiculos);
+            this.Controls.Add(this.BTalquileres);
             this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "ALQUILER DE AUTOS ";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button BTalquileres;
+        private System.Windows.Forms.Button BTvehiculos;
     }
 }
 
