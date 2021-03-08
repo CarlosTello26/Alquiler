@@ -72,5 +72,11 @@ namespace Alquiler
             reader.Close();
         }
 
+        private void BTmostrar_Click(object sender, EventArgs e)
+        {
+            DATOSalquileres.DataSource = null;
+            DATOSalquileres.DataSource = renta;
+            DATOSalquileres.Refresh(); 
+        }
     }
 }

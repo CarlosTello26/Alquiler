@@ -42,6 +42,7 @@ namespace Alquiler
             this.TXTprecio = new System.Windows.Forms.TextBox();
             this.BTingresarvehiculo = new System.Windows.Forms.Button();
             this.DATOSvehiculos = new System.Windows.Forms.DataGridView();
+            this.BTmostrar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DATOSvehiculos)).BeginInit();
             this.SuspendLayout();
@@ -135,7 +136,7 @@ namespace Alquiler
             // 
             // BTingresarvehiculo
             // 
-            this.BTingresarvehiculo.Location = new System.Drawing.Point(120, 181);
+            this.BTingresarvehiculo.Location = new System.Drawing.Point(12, 179);
             this.BTingresarvehiculo.Name = "BTingresarvehiculo";
             this.BTingresarvehiculo.Size = new System.Drawing.Size(113, 61);
             this.BTingresarvehiculo.TabIndex = 11;
@@ -151,11 +152,22 @@ namespace Alquiler
             this.DATOSvehiculos.Size = new System.Drawing.Size(374, 196);
             this.DATOSvehiculos.TabIndex = 12;
             // 
+            // BTmostrar
+            // 
+            this.BTmostrar.Location = new System.Drawing.Point(148, 179);
+            this.BTmostrar.Name = "BTmostrar";
+            this.BTmostrar.Size = new System.Drawing.Size(113, 61);
+            this.BTmostrar.TabIndex = 13;
+            this.BTmostrar.Text = "Mostrar";
+            this.BTmostrar.UseVisualStyleBackColor = true;
+            this.BTmostrar.Click += new System.EventHandler(this.BTmostrar_Click);
+            // 
             // Vehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 499);
+            this.Controls.Add(this.BTmostrar);
             this.Controls.Add(this.DATOSvehiculos);
             this.Controls.Add(this.BTingresarvehiculo);
             this.Controls.Add(this.TXTprecio);
@@ -192,5 +204,6 @@ namespace Alquiler
         private System.Windows.Forms.TextBox TXTprecio;
         private System.Windows.Forms.Button BTingresarvehiculo;
         private System.Windows.Forms.DataGridView DATOSvehiculos;
+        private System.Windows.Forms.Button BTmostrar;
     }
 }

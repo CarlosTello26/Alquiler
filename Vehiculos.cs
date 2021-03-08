@@ -83,5 +83,13 @@ namespace Alquiler
             }
             reader.Close();
         }
+
+        private void BTmostrar_Click(object sender, EventArgs e)
+        {
+            DATOSvehiculos.DataSource = null;
+            DATOSvehiculos.DataSource = carros;
+            DATOSvehiculos.Refresh();
+
+        }
     }
 }
