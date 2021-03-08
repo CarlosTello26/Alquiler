@@ -31,7 +31,29 @@ namespace Alquiler
 
             rentaTemp.Nit = TXTnit.Text;
             rentaTemp.Nombre = TXTnombre.Text;
-            rentaTemp.Direccion1 = TXTdireccion.Text;         
+            rentaTemp.Direccion1 = TXTdireccion.Text;
+
+            Guardar1();
+
+            TXTnit.Text       = "";
+            TXTnombre.Text    = "";
+            TXTdireccion.Text = "";
         }
+        private void Guardar1()
+        {
+            FileStream stream = new FileStream("ALquileres.txt", FileMode.OpenOrCreate, FileAccess.Write);
+
+            StreamWriter writer = new StreamWriter(stream);
+
+            for (int i = 0; i <renta.Count; i++)
+            {
+                writer.WriteLine(renta[i].Nit);
+                writer.WriteLine(renta[i].Nombre);
+                writer.WriteLine(renta[i].Direccion1);
+            }
+            writer.Close();
+
+        }
+
     }
 }
