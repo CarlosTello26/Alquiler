@@ -76,9 +76,9 @@ namespace Alquiler
                 carroTemp.Marca = reader.ReadLine();
                 carroTemp.Color = reader.ReadLine();
                 carroTemp.Precioporkilometros = reader.ReadLine();
-                carroTemp.Fechadealquiler = reader.ReadLine();
-                carroTemp.Fechadedevolucion = reader.ReadLine();
-               
+                carroTemp.Fechadealquiler = Convert.ToDateTime(reader.ReadLine());
+                carroTemp.Fechadedevolucion = Convert.ToDateTime(reader.ReadLine());
+
                 carros.Add(carroTemp);
             }
             reader.Close();
