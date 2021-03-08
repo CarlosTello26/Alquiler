@@ -36,6 +36,8 @@ namespace Alquiler
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BTingresaralquiler = new System.Windows.Forms.Button();
+            this.DATOSalquileres = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DATOSalquileres)).BeginInit();
             this.SuspendLayout();
             // 
             // TXTdireccion
@@ -88,19 +90,28 @@ namespace Alquiler
             // 
             // BTingresaralquiler
             // 
-            this.BTingresaralquiler.Location = new System.Drawing.Point(255, 106);
+            this.BTingresaralquiler.Location = new System.Drawing.Point(476, 34);
             this.BTingresaralquiler.Name = "BTingresaralquiler";
-            this.BTingresaralquiler.Size = new System.Drawing.Size(75, 23);
+            this.BTingresaralquiler.Size = new System.Drawing.Size(122, 61);
             this.BTingresaralquiler.TabIndex = 14;
             this.BTingresaralquiler.Text = "Ingresar";
             this.BTingresaralquiler.UseVisualStyleBackColor = true;
             this.BTingresaralquiler.Click += new System.EventHandler(this.BTingresaralquiler_Click);
             // 
+            // DATOSalquileres
+            // 
+            this.DATOSalquileres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DATOSalquileres.Location = new System.Drawing.Point(13, 151);
+            this.DATOSalquileres.Name = "DATOSalquileres";
+            this.DATOSalquileres.Size = new System.Drawing.Size(585, 282);
+            this.DATOSalquileres.TabIndex = 15;
+            // 
             // Alquileres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 152);
+            this.ClientSize = new System.Drawing.Size(629, 464);
+            this.Controls.Add(this.DATOSalquileres);
             this.Controls.Add(this.BTingresaralquiler);
             this.Controls.Add(this.TXTdireccion);
             this.Controls.Add(this.TXTnombre);
@@ -111,6 +122,7 @@ namespace Alquiler
             this.Name = "Alquileres";
             this.Text = "Alquileres";
             this.Load += new System.EventHandler(this.Alquileres_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DATOSalquileres)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +137,6 @@ namespace Alquiler
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BTingresaralquiler;
+        private System.Windows.Forms.DataGridView DATOSalquileres;
     }
 }

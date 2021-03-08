@@ -41,7 +41,9 @@ namespace Alquiler
             this.TXTcolor = new System.Windows.Forms.TextBox();
             this.TXTprecio = new System.Windows.Forms.TextBox();
             this.BTingresarvehiculo = new System.Windows.Forms.Button();
+            this.DATOSvehiculos = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DATOSvehiculos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,13 +84,13 @@ namespace Alquiler
             // 
             // FECHAalquiler
             // 
-            this.FECHAalquiler.Location = new System.Drawing.Point(12, 40);
+            this.FECHAalquiler.Location = new System.Drawing.Point(29, 40);
             this.FECHAalquiler.Name = "FECHAalquiler";
             this.FECHAalquiler.TabIndex = 4;
             // 
             // FECHAdevolucion
             // 
-            this.FECHAdevolucion.Location = new System.Drawing.Point(278, 40);
+            this.FECHAdevolucion.Location = new System.Drawing.Point(356, 40);
             this.FECHAdevolucion.Name = "FECHAdevolucion";
             this.FECHAdevolucion.TabIndex = 5;
             // 
@@ -96,9 +98,9 @@ namespace Alquiler
             // 
             this.groupBox1.Controls.Add(this.FECHAalquiler);
             this.groupBox1.Controls.Add(this.FECHAdevolucion);
-            this.groupBox1.Location = new System.Drawing.Point(15, 203);
+            this.groupBox1.Location = new System.Drawing.Point(12, 256);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(544, 231);
+            this.groupBox1.Size = new System.Drawing.Size(654, 231);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fechas de ingreso y devolucion";
@@ -133,19 +135,28 @@ namespace Alquiler
             // 
             // BTingresarvehiculo
             // 
-            this.BTingresarvehiculo.Location = new System.Drawing.Point(484, 174);
+            this.BTingresarvehiculo.Location = new System.Drawing.Point(120, 181);
             this.BTingresarvehiculo.Name = "BTingresarvehiculo";
-            this.BTingresarvehiculo.Size = new System.Drawing.Size(75, 23);
+            this.BTingresarvehiculo.Size = new System.Drawing.Size(113, 61);
             this.BTingresarvehiculo.TabIndex = 11;
             this.BTingresarvehiculo.Text = "Ingresar";
             this.BTingresarvehiculo.UseVisualStyleBackColor = true;
             this.BTingresarvehiculo.Click += new System.EventHandler(this.BTingresarvehiculo_Click);
             // 
+            // DATOSvehiculos
+            // 
+            this.DATOSvehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DATOSvehiculos.Location = new System.Drawing.Point(293, 12);
+            this.DATOSvehiculos.Name = "DATOSvehiculos";
+            this.DATOSvehiculos.Size = new System.Drawing.Size(374, 196);
+            this.DATOSvehiculos.TabIndex = 12;
+            // 
             // Vehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 446);
+            this.ClientSize = new System.Drawing.Size(678, 499);
+            this.Controls.Add(this.DATOSvehiculos);
             this.Controls.Add(this.BTingresarvehiculo);
             this.Controls.Add(this.TXTprecio);
             this.Controls.Add(this.TXTcolor);
@@ -160,6 +171,7 @@ namespace Alquiler
             this.Text = "Vehiculos";
             this.Load += new System.EventHandler(this.Vehiculos_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DATOSvehiculos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +191,6 @@ namespace Alquiler
         private System.Windows.Forms.TextBox TXTcolor;
         private System.Windows.Forms.TextBox TXTprecio;
         private System.Windows.Forms.Button BTingresarvehiculo;
+        private System.Windows.Forms.DataGridView DATOSvehiculos;
     }
 }
