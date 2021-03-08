@@ -20,11 +20,13 @@ namespace Alquiler
         private void BTalquileres_Click(object sender, EventArgs e)
         {
             Form Alquileres = new Alquileres();
+            Alquileres.Show();
         }
 
         private void BTvehiculos_Click(object sender, EventArgs e)
         {
             Form Vehiculos = new Vehiculos();
+            Vehiculos.Show();
         }
     }
 }
