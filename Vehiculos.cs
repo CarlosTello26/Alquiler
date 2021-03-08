@@ -38,6 +38,12 @@ namespace Alquiler
 
             carros.Add(carroTemp);
 
+            Guardar2();
+
+            TXTplaca.Text  = "";
+            TXTmarca.Text  = "";
+            TXTcolor.Text  = "";
+            TXTprecio.Text = "";
 
         }
         private void Guardar2()
@@ -56,6 +62,26 @@ namespace Alquiler
                 writer.WriteLine(carros[i].Fechadedevolucion);
             }
             writer.Close();
+        }
+        private void Leer2()
+        {
+            FileStream stream = new FileStream("Vehiculos.txt", FileMode.Open, FileAccess.Read);
+            StreamReader reader = new StreamReader(stream);
+
+            while (reader.Peek() > -1)
+            {
+                Carros carroTemp = new Carros();
+
+                carroTemp.Placa = reader.ReadLine();
+                carroTemp.Marca = reader.ReadLine();
+                carroTemp.Color = reader.ReadLine();
+                carroTemp.Precioporkilometros = reader.ReadLine();
+                carroTemp.Fechadealquiler = reader.ReadLine();
+                carroTemp.Fechadedevolucion = reader.ReadLine();
+               
+                carros.Add(carroTemp);
+            }
+            reader.Close();
         }
     }
 }

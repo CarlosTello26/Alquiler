@@ -54,6 +54,23 @@ namespace Alquiler
             writer.Close();
 
         }
+        private void Leer1()
+        {
+            FileStream stream = new FileStream("Alquileres.txt", FileMode.Open, FileAccess.Read);
+            StreamReader reader = new StreamReader(stream);
+
+            while (reader.Peek() > -1)
+            {
+                Rentas rentaTemp = new Rentas();
+
+                rentaTemp.Nit = reader.ReadLine();
+                rentaTemp.Nombre = reader.ReadLine();
+                rentaTemp.Direccion1 = reader.ReadLine();
+
+                renta.Add(rentaTemp);
+            }
+            reader.Close();
+        }
 
     }
 }
