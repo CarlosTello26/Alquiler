@@ -95,6 +95,7 @@ namespace Alquiler
             this.Controls.Add(this.BTalquileres);
             this.Name = "Form1";
             this.Text = "ALQUILER DE AUTOS ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DatosAlquileres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Datosdelosvehiculos)).EndInit();
             this.ResumeLayout(false);

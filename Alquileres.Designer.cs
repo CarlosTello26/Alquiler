@@ -109,6 +109,7 @@ namespace Alquiler
             this.Controls.Add(this.label1);
             this.Name = "Alquileres";
             this.Text = "Alquileres";
+            this.Load += new System.EventHandler(this.Alquileres_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

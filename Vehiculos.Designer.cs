@@ -157,6 +157,7 @@ namespace Alquiler
             this.Controls.Add(this.label1);
             this.Name = "Vehiculos";
             this.Text = "Vehiculos";
+            this.Load += new System.EventHandler(this.Vehiculos_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

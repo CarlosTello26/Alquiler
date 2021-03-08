@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Alquiler
 {
@@ -27,6 +28,11 @@ namespace Alquiler
         {
             Form Vehiculos = new Vehiculos();
             Vehiculos.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
