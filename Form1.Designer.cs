@@ -41,6 +41,7 @@ namespace Alquiler
             this.BTalquileres.TabIndex = 0;
             this.BTalquileres.Text = "Alquileres";
             this.BTalquileres.UseVisualStyleBackColor = true;
+            this.BTalquileres.Click += new System.EventHandler(this.BTalquileres_Click);
             // 
             // BTvehiculos
             // 
@@ -50,6 +51,7 @@ namespace Alquiler
             this.BTvehiculos.TabIndex = 1;
             this.BTvehiculos.Text = "Vehiculos";
             this.BTvehiculos.UseVisualStyleBackColor = true;
+            this.BTvehiculos.Click += new System.EventHandler(this.BTvehiculos_Click);
             // 
             // Form1
             // 

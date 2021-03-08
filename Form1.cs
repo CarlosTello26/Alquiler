@@ -16,5 +16,15 @@ namespace Alquiler
         {
             InitializeComponent();
         }
+
+        private void BTalquileres_Click(object sender, EventArgs e)
+        {
+            Form Alquileres = new Alquileres();
+        }
+
+        private void BTvehiculos_Click(object sender, EventArgs e)
+        {
+            Form Vehiculos = new Vehiculos();
+        }
     }
 }
